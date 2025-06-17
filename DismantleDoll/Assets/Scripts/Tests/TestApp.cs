@@ -11,6 +11,12 @@ namespace QFramework.TestApp {
             this.RegisterUtility<ITestStorage>(new TestStorage());
             this.RegisterSystem<ITestSystem>(new TestSystem());
         }
+        //protected override void ExecuteCommand(ICommand command)
+        //{
+        //    Debug.Log("before");
+        //    base.ExecuteCommand(command);   
+        //    Debug.Log("after");
+        //}
     }
 
 }

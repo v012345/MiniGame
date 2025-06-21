@@ -26,6 +26,11 @@ namespace QFramework.TestApp
             //this.RegisterEvent<TestEvent>(e => {
             //    UpdateView();
             //}).UnRegisterWhenGameObjectDestroyed(gameObject);
+
+            ActionKit.Repeat().Delay(2.0f, () =>
+            {
+                Debug.Log(Time.time);
+            }).Start(this);
             mModel.Count.RegisterWithInitValue(count => {
                 UpdateView();
             }).UnRegisterWhenGameObjectDestroyed(gameObject);
